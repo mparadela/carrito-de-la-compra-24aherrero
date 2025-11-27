@@ -51,6 +51,8 @@ function agregarProducto() {
         carrito.push(array);
         guardarCarrito();
         renderizarCarrito();
+        inputNombre.value = "";
+        inputPrecio.value = "";
         return;
 }
 
