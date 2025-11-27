@@ -54,9 +54,9 @@ function agregarProducto() {
         return;
 }
 
-//Eliminamos el producto correspondiente pasandole la id desde renderizarCarrito, filtramos con filter y nos devuelve un array con las condiciones que le hemos dado.
+//Eliminamos el producto correspondiente pasandole la id desde renderizarCarrito, filtramos con filter y nos devuelve un array con las condiciones que le hemos dado, a parte tendremos que preguntarle al usuario si de verdad lo quiere eliminar.
 function eliminarProducto(id) {
-    const confirmar = confirm("Estas seguro de que quieres elimimar el producto");
+    const confirmar = confirm("¿Estas seguro de que quieres elimimar el producto?");
     if (!confirmar){
         return;
     }
